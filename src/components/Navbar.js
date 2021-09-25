@@ -27,7 +27,7 @@ function Navbar() {
       </div>
           <div className="search2">
         <div className={classes.root}>
-          <Badge badgeContent={21} color="secondary" >
+          <Badge badgeContent={21} color="secondary"  >
             <NotificationsIcon />
           </Badge>
         </div>

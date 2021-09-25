@@ -42,9 +42,9 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     fontFamily: 'Nunito',
     [theme.breakpoints.up('sm')]: {
-      width: '12ch',
+      width: '55ch',
       '&:focus': {
-        width: '20ch',
+        width: '57ch',
       },
     },
   },

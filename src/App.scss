@@ -10,6 +10,8 @@
   display: flex;
   padding: 15px;
   box-shadow: 0px 0px 17px 0px rgba(8, 37, 100, 0.09);
+  position: relative;
+
   .logo {
     padding: 15px 90px 15px 15px;
     display: flex;
@@ -25,30 +27,24 @@
     display: flex;
     align-items: center;
     text-indent: 35px;
-    width: 450px;
     outline: none;
     border: 1px solid rgba(224, 224, 224, 1);
     margin-top: 5px;
     box-sizing: border-box;
     border-radius: 4px;
-
-    input[type="text"]:focus {
-      background-image: none;
-      text-indent: 0px;
-    }
   }
-  .search2{
-    padding-left: 300px;
+  .search2 {
+    padding-left: 200px;
     display: flex;
-align-items: center;
+    align-items: center;
   }
 
   .last {
     display: flex;
     align-items: center;
     justify-content: center;
-margin-left: 30px;
-.name-profile {
+    margin-left: 30px;
+    .name-profile {
       p {
         font-family: "Graphik";
         margin-right: 10px;
@@ -57,7 +53,49 @@ margin-left: 30px;
     .image-profile {
       margin-right: 10px;
     }
-    .dropdown {
+  }
+}
+.main {
+  display: flex;
+  padding: 0px 10px;
+  height: 100vh;
+  .leftbar {
+    flex: 0.18;
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      margin-left: -30px;
+
+      .profile-right {
+        padding-left: 12px;
+        p {
+          font-family: "Graphik";
+          font-size: 12px;
+        }
+        span {
+          color: rgba(137, 140, 166, 1);
+          font-family: "Graphik Bold";
+          font-size: 12px;
+        }
+      }
     }
+
+   .sidebarIcon{
+      display: flex;
+    }
+  }
+  .middlebar {
+    flex: 0.6;
+    min-width: fit-content;
+    overflow-y: scroll;
+  }
+  .middlebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .rightbar {
+    flex: 0.22;
   }
 }
